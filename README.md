@@ -2,11 +2,7 @@
 
 <h1 align="center">Camoufox</h1>
 
-<h4 align="center">The browser built for AI agents 🦊</h4>
-
-<p align="center">                                      
-Camoufox is an open source browser built for AI agents. It is lightweight, mimics a human browser, and is optimized for LLM automation.
-</p>
+<h4 align="center">Camoufox is a lightweight, open source browser built for webscraping & AI agents. 🦊</h4>
 
 <div align="center">
   <a href="https://trendshift.io/repositories/12224" target="_blank">
@@ -23,7 +19,7 @@ Camoufox is an open source browser built for AI agents. It is lightweight, mimic
 > **All of the latest documentation is available at [camoufox.com](https://camoufox.com).**
 
 > [!NOTE]
-> Browser development is active at [github.com/CloverLabsAI/camoufox](https://github.com/CloverLabsAI/camoufox) and [github.com/VulpineOS/VulpineOS](https://github.com/VulpineOS/VulpineOS).<br>This repo is being used to merge checkpoint releases and should be used as the source of truth.
+> Browser development is active at [github.com/CloverLabsAI/camoufox](https://github.com/CloverLabsAI/camoufox) and [github.com/VulpineOS/VulpineOS](https://github.com/VulpineOS/VulpineOS).<br>This repo is being used to merge checkpoint releases and should be treated as the master copy.
 
 > [!NOTE]
 > To make use of the alpha Camoufox releases, use the [`cloverlabs-camoufox`](https://pypi.org/project/cloverlabs-camoufox/) pip package.
@@ -64,6 +60,17 @@ Camoufox is an open source browser built for AI agents. It is lightweight, mimic
     </td>
     <td valign="middle">
       <a href="https://serpapi.com/use-cases/web-search-api?utm_source=camoufox">SerpApi, a web search API</a> to scrape Google and other search engines with a simple API.
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" align="center" valign="middle" height="100">
+      <a href="https://talordata.com/?campaignid=X01VSF4OOvlHfN6U&utm_source=github&utm_term=camoufox" target="_blank">
+        <img width="350" alt="color horizontal" src="https://github.com/user-attachments/assets/1f470eca-2a37-47ac-bb84-3a63339c1578"/>
+      </a>
+    </td>
+    <td valign="middle">
+      <a href="https://talordata.com/?campaignid=X01VSF4OOvlHfN6U&utm_source=github&utm_term=camoufox">Talordata</a> is a simple web search API to scrape Google and other search engines at a fraction of the cost. Get 1,000 free requests upon registration, and pay just $0.25 per 1,000 successful responses—zero charges for failed scrapes.<br>
+Use coupon code <strong>CAMOUFOX</strong> for <strong>10% OFF</strong> Residential Proxies. [<a href="https://discord.gg/dMZFyY39Fx">Discord</a>]
     </td>
   </tr>
 </table>
@@ -215,7 +222,6 @@ Camoufox is a Firefox fork engineered for web scraping and AI agents. It is head
 * **Built for AI agents** 🤖
   * Minimal, debloated Firefox - fast to launch, cheap to run
   * Drop-in Playwright compatibility via Python interface
-  * Token-efficient: clean DOM output, no CSS animations, or tracking noise
   * Invisible to anti-bot systems so you can run your agent cluster locally or in the cloud without being flagged
 
 - **Undetectable by design** 🎭
