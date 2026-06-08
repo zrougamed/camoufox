@@ -110,7 +110,11 @@ def get_env_vars(
             'win': 'windows',
         }
         os_dir = directory_map.get(user_agent_os, user_agent_os)
+
+        # v150+ uses "fontconfig/" (matching the Go launcher); older bundles shipped "fontconfigs/".
         fontconfig_path = get_path(os.path.join("fontconfig", os_dir))
+        if not os.path.exists(os.path.join(fontconfig_path, "fonts.conf")):
+            fontconfig_path = get_path(os.path.join("fontconfigs", os_dir))
 
         # assert that fonts.conf exists in the directory
         if not os.path.exists(os.path.join(fontconfig_path, "fonts.conf")):
