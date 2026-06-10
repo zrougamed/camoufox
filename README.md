@@ -2,7 +2,7 @@
 
 <h1 align="center">Camoufox</h1>
 
-<h4 align="center">Camoufox is a lightweight, open source browser built for webscraping & AI agents. 🦊</h4>
+<h4 align="center">Camoufox is an open source anti-detect browser built for webscraping & AI agents. 🦊</h4>
 
 <div align="center">
   <a href="https://trendshift.io/repositories/12224" target="_blank">
@@ -201,11 +201,29 @@ Camoufox is intended to be used with rotating proxies (preferably residential IP
   <tr>
     <td width="25%" align="center" valign="middle">
       <a href="https://9proxy.com/pricing?utm_source=github&utm_medium=daijro&utm_campaign=githubdev&utm_content=sponsored" target="_blank">
-        <img width="380" alt="mangoproxy" src="https://github.com/user-attachments/assets/2b59c5d9-317a-488d-a723-134b7237d339"/>
+        <img width="380" alt="9proxy" src="https://github.com/user-attachments/assets/2b59c5d9-317a-488d-a723-134b7237d339"/>
       </a>
     </td>
     <td valign="middle">
       <a href="https://9proxy.com/pricing?utm_source=github&utm_medium=daijro&utm_campaign=githubdev&utm_content=sponsored">9Proxy</a> provides residential proxies from just $0.018/IP or $0.68/GB. 20M+ IPs across 90+ countries. Sticky or rotating sessions, managed from desktop or mobile app.<br>
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" align="center" valign="middle">
+      <a href="https://go.nodemaven.com/daijro" target="_blank">
+        <img width="380" alt="nodemaven" src="https://github.com/user-attachments/assets/3c4075dd-105a-4ed4-a68a-e8cb127bedfa"/>
+      </a>
+    </td>
+    <td valign="middle">
+      <a href="https://go.nodemaven.com/daijro">NodeMaven</a>: The most reliable proxy provider with the Highest Quality IP on the market.<br>
+      Best solution for automation, web scraping, SEO research, and social media management.<br>
+      <a href="https://go.nodemaven.com/daijro">NodeMaven</a> offers:<br>
+      • Sticky sessions up to 7 days<br>
+      • 99.9% uptime<br>
+      • IP filtering: all proxies have fraud score <97%<br>
+      • No KYC required<br>
+      • Cashback on traffic - burn GB and earn up to 10% back<br>
+Special offer: Use code CAMOUFOX35 to get 35% discount on Proxies.
     </td>
   </tr>
 </table>
