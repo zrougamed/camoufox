@@ -50,12 +50,16 @@ def launch_server(**kwargs) -> NoReturn:
 
     data = orjson.dumps(to_camel_case_dict(config))
 
+    # The Playwright driver's package directory, which bundles playwright-core.
+    driver_package = Path(nodejs).parent / "package"
+
     process = subprocess.Popen(  # nosec
         [
             nodejs,
             str(LAUNCH_SCRIPT),
+            str(driver_package),
         ],
-        cwd=Path(nodejs).parent / "package",
+        cwd=driver_package,
         stdin=subprocess.PIPE,
         text=True,
     )
