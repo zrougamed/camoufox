@@ -1,19 +1,19 @@
 diff --git a/dom/animation/AnimationEffect.cpp b/dom/animation/AnimationEffect.cpp
-index 6ef8c30d49..07cad770c9 100644
+index e92fdc9268..5f3fa86940 100644
 --- a/dom/animation/AnimationEffect.cpp
 +++ b/dom/animation/AnimationEffect.cpp
-@@ -13,6 +13,7 @@
+@@ -11,6 +11,7 @@
+ #include "mozilla/dom/KeyframeEffect.h"
  #include "mozilla/dom/MutationObservers.h"
- #include "mozilla/dom/ScrollTimeline.h"  // For PROGRESS_TIMELINE_DURATION_MILLISEC
  #include "nsDOMMutationObserver.h"
 +#include "MaskConfig.hpp"
-
+ 
  namespace mozilla::dom {
-
-@@ -108,10 +109,19 @@ ComputedTiming AnimationEffect::GetComputedTimingAt(
+ 
+@@ -121,10 +122,19 @@ ComputedTiming AnimationEffect::GetComputedTimingAt(
    // Always return the same object to benefit from return-value optimization.
    ComputedTiming result;
-
+ 
 +  result.mActiveDuration = aTiming.ActiveDuration();
    if (aTiming.Duration()) {
      MOZ_ASSERT(aTiming.Duration().ref() >= zeroDuration,
@@ -29,13 +29,25 @@ index 6ef8c30d49..07cad770c9 100644
 +      result.mActiveDuration = zeroDuration;
 +    }
    }
-
+ 
    MOZ_ASSERT(aTiming.Iterations() >= 0.0 && !std::isnan(aTiming.Iterations()),
-@@ -124,7 +134,6 @@ ComputedTiming AnimationEffect::GetComputedTimingAt(
+@@ -137,7 +147,6 @@ ComputedTiming AnimationEffect::GetComputedTimingAt(
               "ValidateIterationStart");
    result.mIterationStart = aTiming.IterationStart();
-
+ 
 -  result.mActiveDuration = aTiming.ActiveDuration();
    result.mEndTime = aTiming.EndTime();
    result.mFill = aTiming.Fill() == dom::FillMode::Auto ? dom::FillMode::None
                                                         : aTiming.Fill();
+diff --git a/dom/animation/moz.build b/dom/animation/moz.build
+index e1599cf4cf..bd58e461ff 100644
+--- a/dom/animation/moz.build
++++ b/dom/animation/moz.build
+@@ -67,6 +67,7 @@ UNIFIED_SOURCES += [
+ ]
+ 
+ LOCAL_INCLUDES += [
++    "/camoucfg",
+     "/dom/base",
+     "/layout/base",
+     "/layout/painting",
