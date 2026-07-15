@@ -592,6 +592,8 @@ Finally you can build and package Camoufox the following command:
 python3 multibuild.py --target linux windows macos --arch x86_64 arm64 i686
 ```
 
+For new builds, `i686` is supported only for Windows. Unsupported target/architecture combinations are skipped.
+
 <details>
 <summary>
 CLI Parameters

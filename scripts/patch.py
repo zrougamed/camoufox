@@ -204,7 +204,7 @@ def add_rustup(*targets):
 def _update_rustup(target):
     """Add rust targets for the given target"""
     if target == "linux":
-        add_rustup("aarch64-unknown-linux-gnu", "i686-unknown-linux-gnu")
+        add_rustup("aarch64-unknown-linux-gnu")
     elif target == "windows":
         add_rustup("x86_64-pc-windows-msvc", "aarch64-pc-windows-msvc", "i686-pc-windows-msvc")
     elif target == "macos":

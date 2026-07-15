@@ -17,8 +17,10 @@ jobs:
           # Fails (.mozbuild does not include clang++-cl)
           - target: windows
             arch: arm64
-          # Unsuported
+          # Unsupported
           - target: macos
+            arch: i686
+          - target: linux
             arch: i686
 
     steps:
