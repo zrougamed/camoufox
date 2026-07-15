@@ -1,3 +1,3 @@
 version=152.0.4
-release=beta.25
+release=beta.26
 closedsrc_rev=1.0.0
