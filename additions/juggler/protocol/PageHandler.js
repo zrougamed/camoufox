@@ -562,8 +562,11 @@ export class PageHandler {
           for (let i = 2; i < trajectory.length - 2; i += 2) {
             const currentX = trajectory[i];
             const currentY = trajectory[i + 1];
-            // Skip movement that is out of bounds
-            if (currentX < 0 || currentY < 0 || currentX > boundingBox.width || currentY > boundingBox.height)
+            // Skip movement that is out of bounds. Must match the endpoint guard
+            // below (>=, not >): a point at exactly x==width or y==height fires as
+            // an exit event instead of eMouseMove, so the hit-renderer ack never
+            // arrives and every later input event hangs behind it forever.
+            if (currentX < 0 || currentY < 0 || currentX >= boundingBox.width || currentY >= boundingBox.height)
               continue;
             await sendOne('mousemove', currentX, currentY);
             await new Promise(resolve => setTimeout(resolve, 10));
